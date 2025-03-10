@@ -1,0 +1,712 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Space between logo and links */
+    align-items: center;
+    /* Align logo and links vertically */
+    padding: 0 20px;
+    /* Horizontal padding */
+    height: 70px;
+    /* Adjust navbar height for better spacing */
+    background-color: darkblue;
+    /* Professional blue */
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Logo Container */
+.navbar-logo {
+    width: 60px;
+    /* Ensure consistent size */
+    height: 60px;
+    /* Matches navbar height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* Make the logo circular */
+    overflow: hidden;
+    /* Prevent image overflow */
+    background-color: white;
+    /* White background for contrast */
+}
+
+/* Logo Image */
+.navbar-logo img {
+    width: 100%;
+    /* Fill the container */
+    height: 100;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure image fits within */
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+    display: flex;
+    /* Arrange links in a row */
+    gap: 20px;
+    /* Add spacing between links */
+    list-style: none;
+    /* Remove default list styles */
+    margin: 0;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
+}
+
+/* Individual Links */
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+    /* Ensure vertical alignment */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    /* White text */
+    font-size: 16px;
+    /* Adjust font size */
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Smooth hover effect */
+}
+
+.navbar .nav-links a:hover {
+    color: yellow;
+    /* Change color on hover */
+}
+
+
+
+
+/* home.html page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    /* Updated background color */
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: yellow;
+    /* Navbar hover color changed to yellow */
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: #f9f9f9;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.welcome p {
+    font-size: 1.4em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Image Gallery Section */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* video  */
+.video-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.hover-video {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hover-video:hover {
+    transform: scale(1.05);
+    /* Zoom effect on hover */
+}
+
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.service-item {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item:hover {
+    background-color: grey;
+    /* Service item hover changed to light gray */
+    color: white;
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.why-choose-us li {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials blockquote {
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.testimonials cite {
+    display: block;
+    font-weight: bold;
+    color: lightskyblue;
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    padding: 15px 30px;
+    background-color: white;
+    color: lightskyblue;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: lightblue;
+    /* Hover button color changed to light blue */
+    transform: translateY(-5px);
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    /* Footer color changed to black */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    color: black;
+    /* Footer link hover color changed to light blue */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome h1 {
+        font-size: 2.5em;
+    }
+
+    .cta h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+
+/* hero section styles */
+#hero {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #1558b3;
+}
+
+
+
+/* service.html page */
+.services-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.1);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+    opacity: 0;
+    animation: fadeIn 0.7s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+.service-btn {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-btn:hover {
+    background-color: #0056b3;
+}
+
+.service-card .service-detail {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-detail {
+    display: block;
+    opacity: 1;
+}
+
+.service-card:hover .service-btn {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* join-us.html page   */
+#join-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e0f7fa;
+    /* Light blue background */
+}
+
+#join-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    /* Dark teal */
+}
+
+#join-us p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#join-us .btn-primary {
+    padding: 12px 25px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#join-us .btn-primary:hover {
+    background-color: #004d40;
+    /* Darker teal */
+}
+
+
+
+/* contact.html page */
+#contact {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    /* Light gray background */
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
+    /* Dark teal */
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 12px 25px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #004d40;
+}
+
+.contact-info {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+
+
+/* about.html page */
+#about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+.carousel img {
+    height: 80vh; /* Adjust image height */
+    object-fit: cover;
+}
+.carousel {
+    margin-top: 40px; /* Optional: Ensures spacing is consistent */
+}
+
+/* Banner Styling */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.banner {
+    margin-bottom: 40px; /* Adjust the value as needed */
+}
+
+
+/* Home Content Section */
+.home-content {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+
+#modernization {
+    background-color: lightgray; /* Just for testing */
+    min-height: 500px; /* Ensure enough height */
+    padding-top: 100px; /* Avoid content hiding under fixed navbar */
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.footer .social-media a:hover {
+    color: white;
+}
+
+.footer .office-address p,
+.footer .chat-section p {
+    margin: 10px 0;
+}
