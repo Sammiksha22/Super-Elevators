@@ -39,28 +39,8 @@
             object-fit: cover;
         }
 
-        #welcome-section {
-            background: url('building.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            backdrop-filter: blur(8px);
-        }
 
-        #typing-title {
-            font-size: 3rem;
-            font-family: 'Brush Script MT', cursive;
-            color: white;
-        }
-
-        #typing-para {
-            font-size: 1.5rem;
-            color: white;
-            width: 60%;
-        }
+/* media for the responsiveness  */
 
         @media (max-width: 768px) {
             .navbar .nav-links {
@@ -166,38 +146,6 @@
     </footer>
 
 
-
-
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-
-        const titleText = "WELCOME TO SUPER ELEVATORS";
-        const paraText = "Your trusted partner in innovative, efficient, and reliable elevator solutions.";
-        let titleIndex = 0, paraIndex = 0;
-
-        function typeTitle() {
-            if (titleIndex < titleText.length) {
-                document.getElementById("typing-title").innerHTML += titleText.charAt(titleIndex);
-                titleIndex++;
-                setTimeout(typeTitle, 150);
-            } else {
-                setTimeout(typePara, 500);
-            }
-        }
-
-        function typePara() {
-            if (paraIndex < paraText.length) {
-                document.getElementById("typing-para").innerHTML += paraText.charAt(paraIndex);
-                paraIndex++;
-                setTimeout(typePara, 100);
-            }
-        }
-
-        window.onload = typeTitle;
-    </script>
 </body>
 
 </html>
