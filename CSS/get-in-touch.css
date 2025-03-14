@@ -1,0 +1,59 @@
+/* Centering the form container */
+.contact-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    gap: 50px; /* Space between image and form */
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+
+/* Styling the left-side image */
+.contact-container img {
+    width: 40%; /* Adjust as needed */
+    max-width: 400px;
+}
+
+/* Form Styling */
+.contact-form {
+    background: #f5f8fc; /* Light background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Icons inside inputs */
+.contact-form input::before,
+.contact-form textarea::before {
+    content: "";
+    padding-left: 10px;
+}
+
+/* Submit Button */
+.contact-form button {
+    width: 100%;
+    background: #4c4cff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #3838e2;
+}
