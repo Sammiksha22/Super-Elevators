@@ -1,27 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elevator Modernization</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="CSS/modernization.css"> <!-- External CSS File -->
+    <script src="JS/modernization.js" defer></script> <!-- External JS File -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <a href="index.html" class="back-home-btn">← Back to Home</a>
 
 </head>
+
 <body>
 
-    <div class="container mt-5">
-        <h2>"Discover the Future of Elevators Today!"</h2>
-        <p>With an elevator modernization, passengers will benefit from updated technologies...</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Upgrade Your Elevators for the Future</h1>
+            <p>Discover how we bring efficiency, safety, and aesthetics to your elevators.</p>
+            <a href=""><button class="cta-btn">Contact Us for a Quote</button></a>
 
-        <h3>Why Consider an Elevator Modernization?</h3>
-        <p>With an elevator modernization, passengers will benefit from updated technologies that enhance safety,
-            improve performance and reliability, and boost sustainability.</p>
-        <p>Investing in an elevator modernization today allows building owners and managers to minimize the
-            unexpected while bringing the passenger experience to the next level.</p>
 
-        <a href="index.html" class="btn btn-secondary">Back to Home</a>
-    </div>
+        </div>
+    </section>
 
+    <!-- Why Upgrade? -->
+    <section class="why-upgrade">
+        <h2>Why Upgrade?</h2>
+        <div class="upgrade-container">
+            <div class="upgrade-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Enhanced Safety</h3>
+                <p>Modern elevators come with advanced safety mechanisms to prevent accidents.</p>
+            </div>
+            <div class="upgrade-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Energy Efficiency</h3>
+                <p>Upgrade to eco-friendly solutions that consume less power.</p>
+            </div>
+            <div class="upgrade-item">
+                <i class="fa-solid fa-paint-roller"></i>
+                <h3>Modern Design</h3>
+                <p>Give your elevator a sleek, modern look with advanced control panels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modernization Process -->
+    <section class="process">
+        <h2>Our Modernization Process</h2>
+        <div class="timeline">
+            <div class="timeline-step">Assessment</div>
+            <div class="timeline-step">Planning</div>
+            <div class="timeline-step">Implementation</div>
+            <div class="timeline-step">Testing</div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Features of Modernized Elevators</h2>
+        <div class="feature-container">
+            <div class="feature-card">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>AI-Powered Controls</h3>
+                <p>Smart AI systems to optimize movement and efficiency.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-hand-pointer"></i>
+                <h3>Touchless Buttons</h3>
+                <p>Gesture-controlled buttons for a contactless experience.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Eco-Friendly</h3>
+                <p>Energy-efficient motors that reduce electricity consumption.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Super Elevator transformed our old system into a modern, high-performance lift!"</p>
+                <h4>- John D.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Our building’s safety has improved significantly after the upgrade!"</p>
+                <h4>- Sarah M.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">How long does the upgrade take? <i
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer">It depends on the project, but usually between 2-4 weeks.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What is the cost of modernization? <i
+                    class="fa-solid fa-chevron-down"></i></button>
+            <div class="faq-answer">The cost varies based on the elevator type and features required.</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contactus.php" method="post">
+            <h2>Contact Us</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="http://www.linkedin.com/in/rajendra-kobal-642159355">LinkedIn</a>
+        </div>
+        <div class="office-address">
+            <p>Shop no.24 Unity Apartment, Damodar Park, L.B.S Marg, Ghatkopar(W) Mumbai-400086</p>
+            <button id="chat-toggle">Chat with us</button>
+        </div>
+    </footer>
 </body>
+
 </html>
