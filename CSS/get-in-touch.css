@@ -1,23 +1,42 @@
-/* Centering the form container */
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Centering the Form and Image */
 .contact-container {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center;
-    gap: 50px; /* Space between image and form */
+    align-items: center;
+    /* Aligns image and form vertically */
+    justify-content: space-between;
+    /* Keeps them side by side */
+    gap: 50px;
+    /* Space between image and form */
     max-width: 1000px;
     margin: auto;
     padding: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling the left-side image */
-.contact-container img {
-    width: 40%; /* Adjust as needed */
+.image-box {
+    width: 40%;
+    /* Adjusted for balance */
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
     max-width: 400px;
 }
 
 /* Form Styling */
-.contact-form {
-    background: #f5f8fc; /* Light background */
+#contact-form {
+    background: #f5f8fc;
+    /* Light background */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,26 +44,66 @@
 }
 
 /* Input Fields */
-.contact-form input,
-.contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    height: 50px;
+    top: 15px;
+    transform: none;
+    padding-left: 40px;
+    /* Pushes text to the right, avoiding icon overlap */
+    padding-right: 10px;
+    /* Keeps right side neat */
+    box-sizing: border-box;
+    /* Ensures padding doesn't change field width */
+
 }
+
+
 
 /* Icons inside inputs */
-.contact-form input::before,
-.contact-form textarea::before {
-    content: "";
-    padding-left: 10px;
+#contact-form .field {
+    position: relative;
 }
 
+#contact-form .field i {
+    position: absolute;
+    left: 12px;
+    /* Adjust position */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    /* Prevent interaction */
+}
+
+/* Fix for message icon alignment */
+#contact-form .message {
+    position: relative;
+}
+
+#contact-form .message i {
+    position: absolute;
+    left: 12px;
+    top: 20px;
+    /* Adjust to align properly */
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+
 /* Submit Button */
-.contact-form button {
-    width: 100%;
+#contact-form button {
+    width: auto;
+    margin: auto;
+    display: block; /* Ensures it doesn’t stretch full width */
     background: #4c4cff;
     color: white;
     padding: 12px;
@@ -54,6 +113,22 @@
     cursor: pointer;
 }
 
-.contact-form button:hover {
+#contact-form button:hover {
     background: #3838e2;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 850px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-box,
+    #contact-form {
+        width: 100%;
+        /* Full width on small screens */
+    }
+
 }
