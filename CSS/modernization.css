@@ -125,89 +125,99 @@ section {
 .modernization-process {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    background: linear-gradient(135deg, #ffffff, #e3f2fd);
 }
-/* Timeline container */
-.timeline {
+/* Card Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* Flip Card */
+.card {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+/* Front and Back Styling */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/* Step circles */
-.step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-.circle {
-    width: 50px;
-    height: 50px;
+.card-front {
     background: #007bff;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
 }
-.circle:hover {
-    transform: scale(1.2);
-    background: #0056b3;
-}
-/* Connector lines */
-.line {
-    width: 50px;
-    height: 5px;
-    background: #007bff;
-}
-/* Step text */
-.step p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+.card-back {
+    background: #ffffff;
     color: #333;
-    transition: color 0.3s ease;
-}
-.step:hover p {
-    color: #007bff;
-}
-/* Add Animation to the Steps */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.step {
-    animation: fadeInUp 0.8s ease-in-out;
+    font-size: 14px;
+    padding: 10px;
+    transform: rotateY(180deg);
 }
 
 
 
 
 /* Features */
-.feature-container {
+/* Features Section */
+.modern-features {
+    text-align: center;
+    padding: 60px 20px;
+    background: #0f0f0f;
+    color: white;
+}
+/* Neon Container */
+.neon-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+/* Neon Card */
+.neon-card {
+    width: 250px;
+    padding: 20px;
+    background: #181818;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+/* Hover Glow Effect */
+.neon-card:hover {
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+    transform: scale(1.05);
+}
+/* Icon Styling */
+.neon-card i {
+    font-size: 40px;
+    color: #00ffcc;
+    margin-bottom: 10px;
 }
 
-.feature-card {
-    width: 30%;
-    padding: 20px;
-}
+
+
 
 /* Testimonials */
 .testimonial-container {
