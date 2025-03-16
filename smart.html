@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Elevators</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/smart.css"> <!-- Smart Elevators CSS -->
+    <script src="/JS/smart.js" defer></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/get-in-touch.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Smart Elevators for the Future</h1>
+            <p>Experience cutting-edge technology with safety, luxury, and eco-efficiency.</p>
+            <a href="#contact"><button class="cta-btn">Get in Touch</button></a>
+        </div>
+    </section>
+    <br>
+    <!-- Why choose Smart Elevators? -->
+    <section class="smart-container">
+        <h2>Why Choose Smart Elevators?</h2>
+        <div class="smart-container">
+            <div class="smart-card">
+                <div class="smart-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Enhanced Safety</h3>
+                <p>Advanced AI and sensor-based security features ensure safe operations.</p>
+            </div>
+            <div class="smart-card">
+                <div class="smart-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Energy Efficiency</h3>
+                <p>Regenerative braking and smart power management reduce energy consumption.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-network-wired feature-icon"></i>
+                <h3>Smart Connectivity</h3>
+                <p>Seamless integration with IoT and cloud-based monitoring for real-time diagnostics and predictive
+                    maintenance.</p>
+            </div>
+        </div>
+    </section>
+
+<br>
+    <!-- Smart Features -->
+    <section class="smart-features">
+        <h2 class="features-title">Key Features of Smart Elevators</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-leaf"></i></div>
+                <h3>Eco-Friendly</h3>
+                <p>Energy-efficient technology reduces power consumption.</p>
+            </div>
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-star"></i></div>
+                <h3>Luxury & Comfort</h3>
+                <p>Elegant interiors with smooth and quiet operation.</p>
+            </div>
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-shield-alt"></i></div>
+                <h3>Advanced Safety</h3>
+                <p>Emergency brakes, auto-rescue devices, and fireproof materials.</p>
+            </div>
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-microchip"></i></div>
+                <h3>IoT Integration</h3>
+                <p>Remote monitoring, predictive maintenance, and smart controls.</p>
+            </div>
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-bolt"></i></div>
+                <h3>High Performance</h3>
+                <p>Faster travel times and smooth acceleration.</p>
+            </div>
+            <div class="feature-box">
+                <span class="ripple"></span>
+                <div class="icon-wrapper"><i class="fas fa-brain"></i></div>
+                <h3>AI-Powered Optimization</h3>
+                <p>Real-time traffic management and intelligent decision-making for enhanced efficiency.</p>
+            </div>     
+        </div>
+    </section>
+    
+    
+
+    
+    
+    <!-- Smart Elevator Projects -->
+    <section class="projects">
+        <h2>Smart Elevator Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="/Images/SmartElevator1.jpg" alt="Smart Elevator Project">
+                <h3>Luxury Smart Elevator - Mumbai</h3>
+                <p>Installed a fully IoT-enabled smart elevator in a commercial tower.</p>
+            </div>
+            <div class="project-box">
+                <img src="/Images/SmartElevator2.jpg" alt="Smart Elevator Project">
+                <h3>Eco-Friendly Elevator - Pune</h3>
+                <p>Upgraded an old system with a smart energy-saving elevator.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">How do smart elevators save energy? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">They use regenerative drives and LED lighting to reduce energy consumption.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I upgrade my existing elevator to a smart elevator? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">Yes! We provide modernization solutions to upgrade existing elevators.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can Smart Elevators integrate with building automation systems? <i
+                        class="fa-solid fa-chevron-down"></i></button>
+                <div class="faq-answer">Yes! Smart Elevators can seamlessly integrate with building automation systems
+                    (BAS) to enhance efficiency and security.</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(button => {
+            button.addEventListener("click", function () {
+                let answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+    <!-- Contact Section Starts -->
+    <section class="contact" id="contact">
+        <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+        <div class="contact-container">
+            <!-- Left Side Image -->
+            <div class="image-box">
+                <img draggable="false" src="/Images/contact1.png" alt="Support Image">
+            </div>
+            <!-- Right Side Form -->
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="db322c39-d00b-4b31-ba9d-f02ffea9b7c6">
+                <input type="hidden" name="subject" value="New Inquiry from Super Elevator Website">
+                <div class="field">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class='fas fa-envelope'></i>
+                </div>
+                <div class="field">
+                    <input type="tel" name="phone" placeholder="Phone">
+                    <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="message">
+                    <textarea placeholder="Message" name="message" required></textarea>
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+        </div>
+        <div class="button-area">
+            <button type="submit">
+                Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+        </form>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="http://www.linkedin.com/in/rajendra-kobal-642159355">LinkedIn</a>
+        </div>
+        <div class="office-address">
+            <p>Shop no.24 Unity Apartment, Damodar Park, L.B.S Marg, Ghatkopar(W) Mumbai-400086</p>
+            <button id="chat-toggle">Chat with us</button>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
