@@ -62,11 +62,13 @@ section {
     padding: 60px 20px;
     background: linear-gradient(to bottom, #f8f9fa, #e0e0e0);
 }
+
 .upgrade-section h2 {
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 30px;
 }
+
 /* Upgrade Cards */
 .upgrade-container {
     display: flex;
@@ -74,6 +76,7 @@ section {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .upgrade-card {
     background: #ffffff;
     padding: 20px;
@@ -84,11 +87,13 @@ section {
     text-align: center;
     position: relative;
 }
+
 .upgrade-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border: 2px solid #007bff;
 }
+
 /* Icon Box */
 .icon-box {
     width: 60px;
@@ -103,16 +108,19 @@ section {
     margin: 0 auto 15px;
     transition: 0.3s ease-in-out;
 }
+
 .upgrade-card:hover .icon-box {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
+
 /* Text Styling */
 .upgrade-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     font-weight: 600;
 }
+
 .upgrade-card p {
     font-size: 1rem;
     color: #555;
@@ -127,6 +135,7 @@ section {
     padding: 50px 20px;
     background: linear-gradient(135deg, #ffffff, #e3f2fd);
 }
+
 /* Card Container */
 .cards-container {
     display: flex;
@@ -134,12 +143,14 @@ section {
     gap: 20px;
     flex-wrap: wrap;
 }
+
 /* Flip Card */
 .card {
     width: 150px;
     height: 150px;
     perspective: 1000px;
 }
+
 .card-inner {
     width: 100%;
     height: 100%;
@@ -147,11 +158,14 @@ section {
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
+
 .card:hover .card-inner {
     transform: rotateY(180deg);
 }
+
 /* Front and Back Styling */
-.card-front, .card-back {
+.card-front,
+.card-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -162,12 +176,14 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .card-front {
     background: #007bff;
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
+
 .card-back {
     background: #ffffff;
     color: #333;
@@ -187,6 +203,7 @@ section {
     background: #0f0f0f;
     color: white;
 }
+
 /* Neon Container */
 .neon-container {
     display: flex;
@@ -194,6 +211,7 @@ section {
     gap: 25px;
     flex-wrap: wrap;
 }
+
 /* Neon Card */
 .neon-card {
     width: 250px;
@@ -204,11 +222,13 @@ section {
     box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
     transition: all 0.3s ease-in-out;
 }
+
 /* Hover Glow Effect */
 .neon-card:hover {
     box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
     transform: scale(1.05);
 }
+
 /* Icon Styling */
 .neon-card i {
     font-size: 40px;
@@ -223,18 +243,21 @@ section {
     padding: 50px 20px;
     background: #f8f8f8;
 }
+
 .modernization-projects h2 {
     font-size: 2.5rem;
     color: #002147;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 .projects-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .project-card {
     background: #fff;
     width: 320px;
@@ -243,25 +266,31 @@ section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
+
 .project-card:hover {
     transform: scale(1.05);
 }
+
 .project-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .project-info {
     padding: 15px;
 }
+
 .project-info h3 {
     font-size: 1.3rem;
     color: #002147;
 }
+
 .project-info p {
     font-size: 1rem;
     color: #666;
 }
+
 .project-info a {
     display: inline-block;
     margin-top: 10px;
@@ -270,12 +299,15 @@ section {
     font-weight: bold;
     transition: color 0.3s;
 }
+
 .project-info a:hover {
     color: #ff5722;
 }
+
 .project-card:hover {
     box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.6);
 }
+
 @media (max-width: 768px) {
     .projects-container {
         flex-direction: column;
@@ -283,62 +315,72 @@ section {
     }
 }
 
-
-
-
 /* Testimonials */
 .testimonial-container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
 .testimonial {
     width: 40%;
     padding: 20px;
     background: #f0f0f0;
+    font-size: 20px;
 }
 
 /* FAQ */
-.faq-item {
-    margin: 10px 0;
-}
-
-.faq-answer {
-    display: none;
-    padding: 10px;
-}
-
-/* Contact */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 40%;
+.faq-container {
+    width: 20%;
     margin: auto;
 }
-
-.back-home-btn {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #007bff;
-    /* Blue color */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
+.faq-item {
+    border-bottom: 0.5px solid #ddd;
+    margin-bottom: 9px;
+}
+.faq-question {
+    font-size: 15px;
+    /* ✅ Makes font bigger */
     font-weight: bold;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    transition: background 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 5px;
 }
+.faq-answer {
+    display: none;
+  }
 
-.back-home-btn:hover {
-    background-color: #0056b3;
-    /* Darker blue on hover */
-}
-/* Enable Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
+/* Contact */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 40%;
+        margin: auto;
+    }
+
+    .back-home-btn {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #007bff;
+        /* Blue color */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        transition: background 0.3s ease;
+    }
+
+    .back-home-btn:hover {
+        background-color: #0056b3;
+        /* Darker blue on hover */
+    }
+
+    /* Enable Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
