@@ -8,6 +8,38 @@ body {
     background-color: #f8f8f8;
 }
 
+/* Navbar Custom Styling */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 8px 15px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 8px;
+    }
+}
 
 
 /* Join Us & Careers Header */
