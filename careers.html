@@ -5,15 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - Super Elevator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      
-
-
-
-
     <link rel="stylesheet" href="/CSS/careers.css">
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
@@ -21,30 +15,39 @@
 <body>
 
     <!-- Navbar Section -->
-    <header class="navbar">
-        <div class="navbar-logo">
-            <img src="/Images/logo.png" alt="Super Elevator Logo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/Images/logo.png" alt="Super Elevator Logo" width="50" height="50">
+            </a>
+            <!-- Toggler Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="joinus.html">Join Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                </ul>
+            </div>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </nav>
 
-        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
+
+
+
+
     </header>
 
     <section class="careers-header">
         <h1>Open Positions</h1>
         <p>Apply for our current openings.</p>
     </section>
-
     <section class="job-listings">
 
         <!-- ONLY SHOW ACTIVE JOBS -->
@@ -81,12 +84,10 @@
     </footer>
 
 
-    
-        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-      
-      
+
+
+
+
 </body>
 
 </html>
