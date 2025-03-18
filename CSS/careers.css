@@ -10,7 +10,7 @@ body {
 
 /* Navbar Custom Styling */
 .navbar-nav .nav-link {
-    color: #fff !important;
+    color: royalblue !important;
     padding: 8px 15px;
 }
 
@@ -30,16 +30,7 @@ body {
     padding: 0;
     margin: 0;
 }
-@media (max-width: 991.98px) {
-    .navbar-nav {
-        text-align: center;
-        padding-top: 10px;
-    }
 
-    .navbar-nav .nav-item {
-        margin-bottom: 8px;
-    }
-}
 
 
 /* Join Us & Careers Header */
